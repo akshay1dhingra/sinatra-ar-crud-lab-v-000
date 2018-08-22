@@ -19,8 +19,6 @@ class ApplicationController < Sinatra::Base
   post '/posts' do #ask why the test for 'redirects to /posts' is passing when I did not redirect anything
     #binding.pry
     @post = Post.create(params)
-
-
     redirect to '/posts'
   end
 
